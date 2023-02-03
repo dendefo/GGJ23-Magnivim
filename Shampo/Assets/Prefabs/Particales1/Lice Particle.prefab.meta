@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Shampo/Assets/Prefabs/Particales1/Lice Particle.prefab.meta
 guid: 82f63953b554c2941b5e3f2f3cbb597e
 PrefabImporter:
+========
+guid: b11adda762098c2459889b5f55a4ea5f
+DefaultImporter:
+>>>>>>>> 244356a4509a2a682deca173bff90216c819b13e:Shampo/Assets/Scenes/HUD.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
