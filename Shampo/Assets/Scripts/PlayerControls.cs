@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControls : MonoBehaviour
+public class PlayerControls : Unit
 {
-    Rigidbody2D body;
     Camera main;
-
+    Rigidbody2D body;
     [SerializeField] float movingSpeed = 100;
     [SerializeField] float jumpforce = 100;
 
-    [SerializeField] GameObject leftBorder;
-    [SerializeField] GameObject rightBorder;
+    [SerializeField] GameObject LeftBorder;
+    [SerializeField] GameObject RightBorder;
     [SerializeField] GameObject Roof;
     [SerializeField] GameObject Floor;
     [SerializeField] GameObject Background;
@@ -21,13 +20,21 @@ public class PlayerControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         main = Camera.main;
-        body = GetComponent<Rigidbody2D>();
 
         Roof.transform.position = new Vector3(0, main.ScreenToWorldPoint(new(0, Screen.height)).y);
+
         Floor.transform.position = new Vector3(0, main.ScreenToWorldPoint(new(0, 0)).y);
-        leftBorder.transform.Translate(new Vector3(main.ScreenToWorldPoint(new(Screen.width, 0)).x+2, 0));
-        rightBorder.transform.Translate(-new Vector3(main.ScreenToWorldPoint(new(Screen.width, 0)).x+2, 0));
+
+        LeftBorder.transform.Translate(new Vector3(main.ScreenToWorldPoint(new(Screen.width, 0)).x+2, 0));
+        Unit.leftBorder = LeftBorder;
+        RightBorder.transform.Translate(-new Vector3(main.ScreenToWorldPoint(new(Screen.width, 0)).x+2, 0));
+        Unit.rightBorder = RightBorder;
+        base.Start();
+        body = GetComponent<Rigidbody2D>();
+        
+
     }
 
     private void Update()
@@ -46,13 +53,6 @@ public class PlayerControls : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape)) Time.timeScale = 0;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Border")
-        {
-            if (collision.transform.position.x < 0) transform.position = new(rightBorder.transform.position.x - 2, transform.position.y, transform.position.z);
-            if (collision.transform.position.x > 0) transform.position = new(leftBorder.transform.position.x + 2, transform.position.y, transform.position.z);
-        }
-    }
+    
 
 }
