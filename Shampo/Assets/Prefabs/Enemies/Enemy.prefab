@@ -112,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 2598487262859882561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2054125820485168123}
@@ -136,6 +136,9 @@ MonoBehaviour:
     MaxHP: 0
     CurrentHp: 0
     Damage: 0
+  z: 0
+  Acos: 0
+  norm: {x: 0, y: 0, z: 0}
   type: 0
   enemySpeed: 7
   prefabFireBall: {fileID: 7008275025497738054, guid: f3e358693cb6ed84bbf32892036866c7, type: 3}
@@ -178,9 +181,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -248,3 +251,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8504801221386094552, guid: 10ef63c2c0b9dbe4c91059767895c54a, type: 3}
   m_PrefabInstance: {fileID: 844451479891002081}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7015846891624378804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9060969235034015033}
+    m_Modifications:
+    - target: {fileID: 4242578288233669238, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_Name
+      value: AcidParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.32999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.91354555
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.40673664
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682230002457935560, guid: e054cb716612f5343b493403cf88f5cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e054cb716612f5343b493403cf88f5cc, type: 3}

@@ -49,9 +49,18 @@ public class EnemyScript : Unit
 
     void Movement()
     {
-        if (transform.position.x - LevelManagerScript.Player.transform.position.x < 0) { sideToMove = true; }
-        if (transform.position.x - LevelManagerScript.Player.transform.position.x > 0) { sideToMove = false; }
-        body.AddRelativeForce(enemySpeed * (sideToMove ? Vector2.right : Vector2.left));
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, LevelManagerScript.Player.transform.position- transform.position);
+        if (hit != null)
+        {
+            if (hit.transform.tag == "Player")
+            {
+                if (Mathf.Abs(LevelManagerScript.Player.GetComponent<PlayerControls>().z - z) < z+360-LevelManagerScript.Player.GetComponent<PlayerControls>().z) { sideToMove = true; }
+                else { sideToMove = false; }
+                body.AddRelativeForce(enemySpeed * (sideToMove ? Vector2.right : Vector2.left));
+            }
+        }
+        
     }
 
     void Attack()
@@ -87,7 +96,7 @@ public class Unit : MonoBehaviour
     public static GameObject rightBorder;
     protected Rigidbody2D body;
     [SerializeField] protected Stats stats;
-    [SerializeField] float z;
+    [SerializeField] public float z;
     [SerializeField] float Acos;
     [SerializeField] Vector3 norm;
     GameObject copy = null;
@@ -95,39 +104,14 @@ public class Unit : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
     }
-    virtual public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Border")
-        {
-
-            if (collision.transform.position.x < 0)
-            {
-                copy = Instantiate(gameObject, new Vector3(rightBorder.transform.position.x - 2, transform.position.y, transform.position.z), new Quaternion());
-                copy.GetComponent<Unit>().copy = gameObject;
-            }
-            if (collision.transform.position.x > 0)
-            {
-                copy = Instantiate(gameObject, new(leftBorder.transform.position.x + 2, transform.position.y, transform.position.z), new Quaternion());
-                copy.GetComponent<Unit>().copy = gameObject;
-            }
-        }
-    }
-
-    virtual public void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Border")
-        {
-
-        }
-    }
 
     virtual public void Update()
     {
 
-        //transform.RotateAround(LevelManagerScript.Head.transform.position, Vector3.forward, 1);
         norm = Vector3.Normalize(transform.position - LevelManagerScript.Head.transform.position);
         Acos = Mathf.Acos(norm.y);
         z = Acos/Mathf.PI * ((transform.position.x >= 0) ? -180 : 180);
+        if (z < 0) z += 360;
 
         transform.localEulerAngles = new Vector3(0, 0, z);
 
