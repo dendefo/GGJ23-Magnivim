@@ -1017,12 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dada3ca694776f44bb7f6cf476ebf593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_Diamonds:
-  - {fileID: 1815157107}
-  - {fileID: 860252423}
-  - {fileID: 931321900}
-  - {fileID: 2096985520}
-  - {fileID: 702467780}
+  HP_Diamonds: []
 --- !u!1 &1815157105
 GameObject:
   m_ObjectHideFlags: 0
