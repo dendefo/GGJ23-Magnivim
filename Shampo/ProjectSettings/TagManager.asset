@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Hair
   - Head
+  - Players Attack
+  - Weapon
   layers:
   - Default
   - TransparentFX

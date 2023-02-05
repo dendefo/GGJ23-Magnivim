@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Shampo/Assets/Sprites/Skin Material.meta
 guid: 64386a1e053a1a4478b71171ce772c6e
 folderAsset: yes
@@ -7,6 +8,10 @@ DefaultImporter:
 guid: da318e2e2a173914cb15c2e61ce5b555
 PrefabImporter:
 >>>>>>>> MAP:Shampo/Assets/Prefabs/Particales1/FireBall/FireBall.prefab.meta
+=======
+guid: da318e2e2a173914cb15c2e61ce5b555
+PrefabImporter:
+>>>>>>> Stashed changes
   externalObjects: {}
   userData: 
   assetBundleName: 

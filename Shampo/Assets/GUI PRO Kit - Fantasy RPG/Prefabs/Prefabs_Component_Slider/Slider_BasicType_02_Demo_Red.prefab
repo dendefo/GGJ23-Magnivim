@@ -11,9 +11,16 @@ GameObject:
   - component: {fileID: 8642797688546122575}
   - component: {fileID: 8642797688546122570}
   - component: {fileID: 8642797688546122569}
+<<<<<<< Updated upstream
   - component: {fileID: 8642797688546122568}
   m_Layer: 5
   m_Name: Slider_BasicType_03_Demo_Red
+=======
+  - component: {fileID: 3417547572051231787}
+  - component: {fileID: 8642797688546122568}
+  m_Layer: 5
+  m_Name: Slider_BasicType_02_Demo_Red
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,11 +33,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8642797688546122574}
+<<<<<<< Updated upstream
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8642797689421177687}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.9362502, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -62,6 +77,10 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+<<<<<<< Updated upstream
+=======
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> Stashed changes
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -76,6 +95,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< Updated upstream
+=======
+--- !u!114 &3417547572051231787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8642797688546122574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae563fb8cf37594f9c7422104307d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> Stashed changes
 --- !u!114 &8642797688546122568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +124,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+<<<<<<< Updated upstream
+=======
+    m_WrapAround: 0
+>>>>>>> Stashed changes
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -116,7 +154,11 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 8642797688546122569}
+<<<<<<< Updated upstream
   m_FillRect: {fileID: 8642797689421177687}
+=======
+  m_FillRect: {fileID: 0}
+>>>>>>> Stashed changes
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
@@ -126,6 +168,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
 --- !u!1 &8642797689421177686
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,3 +243,5 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+=======
+>>>>>>> Stashed changes

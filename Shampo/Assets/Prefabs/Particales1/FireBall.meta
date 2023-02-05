@@ -1,10 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Shampo/Assets/Scenes/Level 1.unity.meta
 guid: 3f6931c80503cc549ababa39d2d15901
 ========
 guid: 8b2a96e6611071e4a9d40acabf91cd75
 folderAsset: yes
 >>>>>>>> MAP:Shampo/Assets/Prefabs/Particales1/FireBall.meta
+=======
+guid: 30f323367071459478a653f7ac9c1a9b
+folderAsset: yes
+>>>>>>> Stashed changes
 DefaultImporter:
   externalObjects: {}
   userData: 

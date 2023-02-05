@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Shampo/Assets/Prefabs/Player.prefab.meta
 guid: e47c362b768a03c48b0d8fb387cc97c2
 PrefabImporter:
@@ -7,6 +8,11 @@ guid: db124ae04282ae94482d68218c87ad60
 folderAsset: yes
 DefaultImporter:
 >>>>>>>> MAP:Shampo/Assets/Prefabs/Particales1/Particle Purge.meta
+=======
+guid: bc507dca3beb26e47a895ea8d4ed2d68
+folderAsset: yes
+DefaultImporter:
+>>>>>>> Stashed changes
   externalObjects: {}
   userData: 
   assetBundleName: 

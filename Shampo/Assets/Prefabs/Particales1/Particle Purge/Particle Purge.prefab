@@ -42,9 +42,15 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2806228359322627063}
   serializedVersion: 8
+<<<<<<< Updated upstream
   lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
+=======
+  lengthInSec: 2
+  simulationSpeed: 1
+  stopAction: 2
+>>>>>>> Stashed changes
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -4872,9 +4878,15 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5387072369391446229}
   serializedVersion: 8
+<<<<<<< Updated upstream
   lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
+=======
+  lengthInSec: 2
+  simulationSpeed: 1
+  stopAction: 2
+>>>>>>> Stashed changes
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -9685,7 +9697,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6960560404030341306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -0.25596374, y: -0.13333277, z: 3.3367195}
+=======
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9735,9 +9751,15 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8953901525775572957}
   serializedVersion: 8
+<<<<<<< Updated upstream
   lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
+=======
+  lengthInSec: 2
+  simulationSpeed: 1
+  stopAction: 2
+>>>>>>> Stashed changes
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}

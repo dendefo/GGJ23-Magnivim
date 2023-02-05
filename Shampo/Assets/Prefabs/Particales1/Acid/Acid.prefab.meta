@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< HEAD:Shampo/Assets/Sprites/Player Sprite.controller.meta
 guid: 4242bda03c0a2a448892c94a3a570e14
 NativeFormatImporter:
@@ -8,6 +9,11 @@ PrefabImporter:
 >>>>>>>> MAP:Shampo/Assets/Prefabs/Particales1/Acid/Acid.prefab.meta
   externalObjects: {}
   mainObjectFileID: 9100000
+=======
+guid: e41e08f1f13aa0b45ab895aa6bfe2b83
+PrefabImporter:
+  externalObjects: {}
+>>>>>>> Stashed changes
   userData: 
   assetBundleName: 
   assetBundleVariant: 

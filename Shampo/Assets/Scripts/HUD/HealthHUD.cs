@@ -5,40 +5,30 @@ using UnityEngine.UI;
 
 public class HealthHUD : MonoBehaviour
 {
-    public int Health;
-    public int NumOfHearts;
-
     public Image[] Hearts;
-    public Sprite FullHeart;
 
     public Slider slider;
-    
+    public int hp;
+
+    [SerializeField] AudioClip HPLoss;
+    private void Start()
+    {
+        hp = LevelManagerScript.Player.GetComponent<PlayerControls>().stats.CurrentHp;
+    }
     void Update()
     {
-        for (int i = 0; i < Hearts.Length; i++)
+
+        if (LevelManagerScript.Player.GetComponent<PlayerControls>().stats.CurrentHp == hp) return;
+        hp = LevelManagerScript.Player.GetComponent<PlayerControls>().stats.CurrentHp;
+        AudioSource.PlayClipAtPoint(HPLoss, LevelManagerScript.Player.transform.position);
+        for (int i = 0; i < 5; i++)
         {
-            if (Health > NumOfHearts)
-            {
-                Health = NumOfHearts;
-            }
-            if (i < Health)
-            {
-                Hearts[i].sprite = FullHeart;
-            }
-            else
-            {
-                Hearts[i].sprite = null;
-            }
-            if (i > NumOfHearts)
-            {
-                Hearts[i].enabled = true;
-            }
+            if (i < LevelManagerScript.Player.GetComponent<PlayerControls>().stats.CurrentHp)
+            { Hearts[i].color = new(255, 255, 0); }
+            else Hearts[i].color = new(0, 0, 0);
         }
+
+
     }
 
-    public void SetHealth(int health)
-    {
-        health = Health;
-        slider.value = Health;
-    }
 }

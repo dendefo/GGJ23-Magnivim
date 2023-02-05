@@ -6,6 +6,11 @@ public class HairGenerator : MonoBehaviour
 {
     [SerializeField] GameObject prefab;
     [SerializeField] float length = 1;
+<<<<<<< Updated upstream
+=======
+
+    [SerializeField] Rigidbody2D body;
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +32,14 @@ public class HairGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
+=======
+        Vector3 norm = Vector3.Normalize(transform.position - LevelManagerScript.Head.transform.position);
+        float Acos = Mathf.Acos(norm.y);
+        float z = Acos / Mathf.PI * ((transform.position.x >= 0) ? -180 : 180);
+
+        transform.localEulerAngles = new Vector3(0, 0, z);
+>>>>>>> Stashed changes
 
     }
 }
